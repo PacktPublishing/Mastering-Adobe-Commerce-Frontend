@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../../lib/internal/Magento/Framework/Config/etc/theme.xsd">
+    <title>Packt2 Theme</title>
+    <parent>Magento/luma</parent>
+</theme>

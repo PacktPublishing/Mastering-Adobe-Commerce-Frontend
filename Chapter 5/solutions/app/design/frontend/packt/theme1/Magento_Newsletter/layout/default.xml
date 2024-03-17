@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- solution to exercise 3, Chapter 5 -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock  name="form.subscribe" template="Magento_Newsletter::new-subscribe.phtml" />
+
+        <move element="form.subscribe" destination="main.content" after="-" />
+    </body>
+</page>
+<!-- /end solution -->

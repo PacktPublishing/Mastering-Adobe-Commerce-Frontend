@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- solution to exercise 4, Chapter 5 -->
+        <referenceBlock name="product.info.addto" template="Magento_Catalog::product/view/add.to.phtml" />
+        <!-- /end solution -->
+
+        <!-- solution to exercise 5, Chapter 5 -->
+        <referenceBlock name="product.info.sku" remove="true" />
+        <!-- /end solution -->
+    </body>
+</page>
+
+
+
+

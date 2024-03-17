@@ -1,0 +1,38 @@
+<!-- solution to exercise 11, Chapter 5 -->
+<?php
+
+/**
+ * Currency switcher
+ *
+ * @var \Magento\Directory\Block\Currency $block
+ */
+
+?>
+<?php if ($block->getCurrencyCount() > 1) : ?>
+    <?php $currencies = $block->getCurrencies(); ?>
+    <?php $currentCurrencyCode = $block->getCurrentCurrencyCode(); ?>
+    <?php $id = $block->getIdModifier() ? '-' . $block->getIdModifier() : '' ?>
+    <div class="currency switcher-currency" id="switcher-currency<?= $block->escapeHtmlAttr($id) ?>">
+        <table class="currency-table">
+            <tr>
+                <td>
+                    <strong class="language-<?= $block->escapeHtml($block->getCurrentCurrencyCode()) ?>">
+                        <span><?= $block->escapeHtml($currentCurrencyCode) ?> - <?= $currencies[$currentCurrencyCode] ? $block->escapeHtml($currencies[$currentCurrencyCode]) : '' ?></span>
+                    </strong>
+                </td>
+            </tr>
+
+            <?php foreach ($currencies as $_code => $_name) : ?>
+                <?php if ($_code != $currentCurrencyCode) : ?>
+                    <tr class="currency-<?= $block->escapeHtmlAttr($_code) ?> ">
+                        <td>
+                        <a href="#" data-post='<?= /* @noEscape */ $block->getSwitchCurrencyPostData($_code) ?>'><?= $block->escapeHtml($_code) ?> - <?= $block->escapeHtml($_name) ?></a>
+                        </td>
+                    </tr>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </table>
+
+    </div>
+<?php endif; ?>
+<!-- /end solution -->

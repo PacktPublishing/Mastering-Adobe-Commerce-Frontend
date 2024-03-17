@@ -1,0 +1,39 @@
+/** <!-- exercise 8 solution, Chapter 6 --> */
+.toolbar {
+    &:before {
+        content: inherit;
+        display: none;
+    }
+
+    &.toolbar-products {
+        display: grid;
+        grid-template-columns: 5fr 5fr 5fr;
+
+        #toolbar-amount {
+            display: flex;
+            justify-content: center;
+
+            .toolbar-number {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+/** <!-- /end solution --> */
+
+
+
+/** <!-- exercise 9 solution, Chapter 6 --> */
+.bears {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 15vw);
+    grid-gap: 15px;
+
+    .bear__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/** <!-- /end solution --> */

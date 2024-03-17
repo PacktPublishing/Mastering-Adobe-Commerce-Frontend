@@ -1,0 +1,61 @@
+@link_color: #00ff00;
+@link_color_visited: #10b410;
+@color-green-apple: #1ad51a;
+@font_bold: 800;
+@color-red: #ff0000;
+@color-custom-yellow: rgb(255, 243, 185);
+@icon-size: 32px;
+
+.css-playground {
+    border: 1px solid gray;
+    padding: 20px;
+    font-family: "Ubuntu Mono", "Andale Mono", "DejaVu Sans Mono", "Monaco", "Bitstream Vera Sans Mono", "Consolas", "Lucida Console", monospace;
+    background-color: #f0f0f0;
+}
+
+.product-wishlist {
+    border: 1px solid silver;
+    margin-bottom: 20px;
+
+    a {
+        color: @link_color;
+        font-weight: @font_bold;
+    }
+}
+
+p {
+    &.paragraph-style {
+        padding: 20px;
+    }
+}
+p {
+    &.paragraph-italic {
+        .paragraph-style();
+        font-style: italic;
+    }
+}
+
+
+.round-icon(@color: @color-red, @size: @icon-size) {
+    display: inline-block;
+    width: @size;
+    height: @size;
+    border-radius: 50%;
+    background-color: @color;
+}
+
+.round-icon-red {
+    .round-icon();
+}
+
+.round-icon-yellow {
+    .round-icon(@color-custom-yellow);
+}
+
+.round-icon-green {
+    .round-icon(@color-green-apple);
+}
+
+.round-icon-blue {
+    .round-icon(#1234ff);
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page layout="2columns-same-size" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="div.column.left">
+            <block class="PacktPub\FrontendCourse\Block\Loops" name="for.loop.demo"
+                   template="PacktPub_FrontendCourse::loops/for.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="div.column.right">
+            <block class="PacktPub\FrontendCourse\Block\Loops" name="foreach.loop.demo"
+                   template="PacktPub_FrontendCourse::loops/foreach.phtml" />
+        </referenceContainer>
+
+        <referenceBlock name="packt1.default" remove="true" />
+        <referenceBlock name="packt1.footer.block" remove="true" />
+        <referenceBlock name="argument.test" remove="true" />
+    </body>
+</page>

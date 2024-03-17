@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="PacktPub_FrontendCourse::css/packt2.css" />
+    </head>
+
+    <body>
+        <!-- -->
+        <referenceBlock name="header.links">
+            <block name="packtpub.link" template="PacktPub_FrontendCourse::header/links/link.phtml" after="-"/>
+            <block name="packtpub.loop.in.blocks" template="PacktPub_FrontendCourse::header/links/loops.phtml" before="-"/>
+            <block name="packtpub.child.blocks" template="PacktPub_FrontendCourse::header/links/nested.phtml" before="-"/>
+        </referenceBlock>
+        <!-- -->
+    </body>
+</page>

@@ -1,0 +1,13 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div>
+    <h3><?= __('Here is my data from Layout XML');?> </h3>
+    <?= $block->getData('content'); ?>
+    <hr />
+    <h4><?= __('And here I render all child blocks:'); ?></h4>
+    <div>
+        <?= $block->getChildHtml(); ?>
+    </div>
+
+</div>

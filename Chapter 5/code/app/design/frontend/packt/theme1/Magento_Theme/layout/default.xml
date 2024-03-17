@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header" template="Magento_Theme::custom/header.phtml" />
+
+        <referenceContainer name="content">
+            <block name="argument.test" template="Magento_Theme::argument-test.phtml">
+                <arguments>
+                    <argument name="packt_value" xsi:type="string">this is a string value</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

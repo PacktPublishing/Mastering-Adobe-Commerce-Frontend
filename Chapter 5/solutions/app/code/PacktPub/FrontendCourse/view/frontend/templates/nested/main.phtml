@@ -1,0 +1,9 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div>
+    <?= $block->getChildHtml(); ?>
+    <?= $block->getChildHtml('packt1.left.demo2'); ?>
+    <?= $block->getChildChildHtml(''); ?>
+    <?= $block->getBlockHtml('packt1.left.demo2'); ?>
+</div>

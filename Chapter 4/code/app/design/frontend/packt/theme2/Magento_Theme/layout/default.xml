@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/packt2.css" media="all"/>
+        <css src="css/packt2.css" media="screen and (min-width: 768px)" />
+        <css src="css/theme1.css" media="all"/>
+        <css src="PacktPub_FrontendCourse::css/mainmodulefile.css" media="all"/>
+    </head>
+
+    <body>
+        <referenceBlock name="packt1.default" remove="true" />
+    </body>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- changing the layout to 3 columns from the theme folder -->
+<!-- layout attribute is solution to exercise 2 -->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <update handle="2columns-update" />
+
+    <body>
+<!-- solution to exercise 8 -->
+        <referenceContainer name="main.content" htmlClass="page-main packt1-class" />
+<!-- end solution 7 -->
+
+<!-- solution to exercise 8 -->
+        <attribute name="class" value="my-new-body-class"/>
+<!-- end solution 8 -->
+
+<!-- solution to exercise  4 -->
+        <!-- moving elements -->
+        <move element="packt1.left.demo1" destination="div.column.right" after="-" />
+        <move element="packt1.left.demo2" destination="div.column.right" before="packt1.left.demo1" />
+        <move element="packt1.left.demo3" destination="div.column.right" before="packt1.left.demo2" />
+        <move element="packt1.left.demo4" destination="div.column.right" before="packt1.left.demo3" />
+        <move element="packt1.left.demo5" destination="div.column.right" before="packt1.left.demo4" />
+        <move element="packt1.right.demo1" destination="div.column.left" before="-" />
+<!-- end solution 4 -->
+
+        <!-- removing right columns block for clarity -->
+        <referenceBlock name="catalog.compare.sidebar" remove="true" />
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+
+        <!-- changing page HEAD title -->
+    </body>
+
+<!-- solution to exercise 5 -->
+    <head>
+        <title>Our Custom Page Title!</title>
+        <meta name="robots" content="NOINDEX, NOROBOTS" />
+    </head>
+<!-- end solution 5 -->
+
+</page>

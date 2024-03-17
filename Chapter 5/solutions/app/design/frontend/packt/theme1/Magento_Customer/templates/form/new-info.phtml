@@ -1,0 +1,16 @@
+<!-- solution to exercise 8, Chapter 5 -->
+<?php
+/** @var \Magento\Customer\Block\Form\Login\Info $block */
+?>
+<?php if ($block->getRegistration()->isAllowed()) : ?>
+    <div class="block block-new-customer">
+        <div class="block-content" aria-labelledby="block-new-customer-heading">
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <a href="<?= $block->escapeUrl($block->getCreateAccountUrl()) ?>" class="action create primary"><span><?= $block->escapeHtml(__('Create an Account')) ?></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
+<!-- /end solution -->

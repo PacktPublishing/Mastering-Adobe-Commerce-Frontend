@@ -1,0 +1,139 @@
+<!--<h2>This template comes from the default.xml</h2>-->
+<!--<hr />-->
+<!---->
+<!--<div id="element_id">-->
+<!--    <div data-role="collapsible">-->
+<!--        <div data-role="trigger">-->
+<!--            <h4> Accordion 1</h4>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div data-role="content">Accordion 1 Content</div>-->
+<!---->
+<!--    <div data-role="collapsible">-->
+<!--        <div data-role="trigger">-->
+<!--            <h4>Accordion 2</h4>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div data-role="content">Accordion 2 Content</div>-->
+<!--</div>-->
+<!---->
+<!--<script>-->
+<!--    require([-->
+<!--            'jquery',-->
+<!--            'accordion'-->
+<!--        ], function ($) {-->
+<!--            $("#element_id").accordion({-->
+<!--                "collapsible": true,-->
+<!--                "multipleCollapsible": true-->
+<!--            });-->
+<!--        }-->
+<!--    );-->
+<!--</script>-->
+<!---->
+<!---->
+<!--<hr />-->
+<!--<div style="width: 200px;">-->
+<!--    <div id="accordion" data-mage-init='{-->
+<!--        "accordion":{-->
+<!--            "active": [0, 1],-->
+<!--            "collapsible": true,-->
+<!--            "openedState": "active",-->
+<!--            "multipleCollapsible": true-->
+<!--        }}'>-->
+<!--        <div data-role="collapsible">-->
+<!--            <div data-role="trigger">-->
+<!--                <h4>Accordion 1</h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div data-role="content">Accordion 1 Content</div>-->
+<!---->
+<!--        <div data-role="collapsible">-->
+<!--            <div data-role="trigger">-->
+<!--                <h4>Accordion 2</h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div data-role="content">Accordion 2 Content</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<hr />-->
+<!---->
+<!---->
+<!--<div id="tabs" class="product data items">-->
+<!---->
+<!--    <div class="item title" data-role="collapsible">-->
+<!--        <a class="switch" data-toggle="trigger" href="#tab-cars">Delivery Information</a>-->
+<!--    </div>-->
+<!--    <div id="tab-cars" class="item content" data-role="content">this is just a block with some random delivery information</div>-->
+<!---->
+<!--    <div class="item title" data-role="collapsible">-->
+<!--        <a class="switch" data-toggle="trigger" href="#tab-movies">Payment Information</a>-->
+<!--    </div>-->
+<!--    <div id="tab-movies" class="item content" data-role="content">This is a block with some payment information</div>-->
+<!--</div>-->
+<!---->
+<!--<script>-->
+<!--    require([-->
+<!--        'jquery',-->
+<!--        'mage/tabs'], function ($, tabs) {-->
+<!--        $("#tabs").tabs({-->
+<!--            "openedState": "active",-->
+<!--            "animate":-->
+<!--                {-->
+<!--                    "duration": 100-->
+<!--                },-->
+<!--            "active": 0,-->
+<!--            "disabled": [2], "disabledState": "disabled",-->
+<!--            beforeOpenCallback: function() {-->
+<!--                alert('asd');-->
+<!--            }-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<!---->
+<!--<hr />-->
+<!---->
+<!--<button id="prompt">--><?php //= __('Prompt'); ?><!--</button>-->
+<!---->
+<!---->
+<!--<script>-->
+<!--    require([-->
+<!--        'jquery',-->
+<!--        'Magento_Ui/js/modal/prompt'-->
+<!--    ], function ($, prompt) {-->
+<!--        'use strict';-->
+<!---->
+<!--        $('#prompt').on('click', function() {-->
+<!--            prompt({-->
+<!--                title: $.mage.__('What is your name?'),-->
+<!--                content: '<h4>Content of the prompt window</h4>',-->
+<!--                modalClass: 'prompt',-->
+<!--                value: $.mage.__('Default Value'),-->
+<!--                validation: true,-->
+<!--                promptField: '[data-role="promptField"]',-->
+<!--                validationRules: ['required-entry'],-->
+<!--                attributesForm: {-->
+<!--                    novalidate: 'novalidate',-->
+<!--                    action: ''-->
+<!--                },-->
+<!--                attributesField: {-->
+<!--                    name: 'name',-->
+<!--                    'data-validate': '{required:true}',-->
+<!--                    maxlength: '255'-->
+<!--                },-->
+<!--                actions: {-->
+<!--                    always: function () {-->
+<!--                        console.log('')-->
+<!--                    },-->
+<!--                    confirm: function () {-->
+<!--                        console.log('success!');-->
+<!--                    },-->
+<!--                    cancel: function () {-->
+<!--                        console.log('cancel!');-->
+<!--                    }-->
+<!--                }-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<!---->
+<!---->

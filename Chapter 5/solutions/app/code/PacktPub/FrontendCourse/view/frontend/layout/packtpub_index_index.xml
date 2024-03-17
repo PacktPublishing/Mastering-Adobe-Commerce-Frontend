@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page layout="2columns-same-size" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceContainer name="div.column.left">
+            <block name="packt1.left.demo1" template="PacktPub_FrontendCourse::main.phtml">
+                <arguments>
+                    <argument name="content" xsi:type="string"><![CDATA[First block goes here]]></argument>
+                </arguments>
+            </block>
+
+            <block name="packt1.left.demo2" template="PacktPub_FrontendCourse::main.phtml">
+                <arguments>
+                    <argument name="content" xsi:type="string"><![CDATA[Second Block On the Left]]></argument>
+                </arguments>
+            </block>
+
+            <block name="packt1.left.demo3" template="PacktPub_FrontendCourse::main.phtml">
+                <arguments>
+                    <argument name="content" xsi:type="string"><![CDATA[Third Block On the Left]]></argument>
+                </arguments>
+            </block>
+
+            <block name="packt1.left.demo4" template="PacktPub_FrontendCourse::main.phtml">
+                <arguments>
+                    <argument name="content" xsi:type="string"><![CDATA[4th Block On the Left]]></argument>
+                </arguments>
+            </block>
+
+            <block name="packt1.left.demo5" template="PacktPub_FrontendCourse::main.phtml">
+                <arguments>
+                    <argument name="content" xsi:type="string"><![CDATA[5th Block On the Left]]></argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="div.column.right">
+            <block name="packt2.demo" template="PacktPub_FrontendCourse::main.phtml">
+                <arguments>
+                    <argument name="content" xsi:type="string"><![CDATA[First block on the right]]></argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <move element="packt1.left.demo3" destination="div.column.right" before="-"/>
+
+        <referenceBlock name="packt1.default" remove="true" />
+        <referenceBlock name="packt1.footer.block" remove="true" />
+    </body>
+</page>

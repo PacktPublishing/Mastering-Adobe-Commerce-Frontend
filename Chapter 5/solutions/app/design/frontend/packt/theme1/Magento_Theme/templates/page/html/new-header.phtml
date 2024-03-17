@@ -1,0 +1,21 @@
+<!-- solution to exercise 2, Chapter 5 -->
+<!-- CSS <style> is here on purpose as we deal with in next Chapters :-) -->
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .block-search {
+        float: left;
+    }
+</style>
+<div class="grid-container">
+    <div class="top-search"><?= $block->getChildHtml('topSearch');?></div>
+    <div class="header-logo"><?= $block->getChildHtml('logo');?></div>
+    <div class="register-link"><?= $block->getChildHtml('register-link');?></div>
+</div>
+<!-- /end solution -->

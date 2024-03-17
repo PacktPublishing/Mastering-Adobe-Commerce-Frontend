@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-same-size" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- solution to exercise 11 -->
+    <update handle="packtpub-blocks" />
+
+    <head>
+        <title />
+        <css src="Magento_Customer::css/custom.css" />
+    </head>
+
+    <body>
+        <referenceBlock name="packt1.default" remove="true" />
+        <referenceBlock name="packt1.footer.block" remove="true" />
+        <referenceBlock name="packtpub.link" remove="true" />
+
+        <move element="customer_form_login" destination="div.column.left" />
+        <move element="customer.new" destination="div.column.left" after="customer_form_login" />
+
+        <move element="packt1.left.demo1" destination="div.column.right" after="-" />
+        <move element="packt1.left.demo2" destination="div.column.right" before="packt1.left.demo1" />
+        <move element="packt1.left.demo3" destination="div.column.right" before="packt1.left.demo2" />
+        <move element="packt1.left.demo4" destination="div.column.right" before="packt1.left.demo3" />
+        <move element="packt1.left.demo5" destination="div.column.right" before="packt1.left.demo4" />
+    </body>
+    <!-- /end solution -->
+</page>

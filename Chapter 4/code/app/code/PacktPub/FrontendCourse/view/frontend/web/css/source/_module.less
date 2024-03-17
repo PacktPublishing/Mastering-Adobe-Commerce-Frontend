@@ -1,0 +1,36 @@
+.grid-columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  h1, h2, h3, h4 {
+    font-weight: normal;
+  }
+
+  .sidebar {
+    border: 1px dashed silver;
+    padding: 20px;
+
+    div {
+      border: 1px dashed red;
+      padding: 10px;
+      text-align: center;
+
+      &:nth-child(2n+1) {
+        background-color: lightcyan;
+      }
+    }
+  }
+}
+
+.paragraph-style {
+  padding: 20px;
+}
+
+p {
+  &.paragraph-italic {
+    .paragraph-style();
+    font-style: italic;
+  }
+}

@@ -1,0 +1,79 @@
+<!-- Exercise 3, Chapter 7 -->
+<!--@subject {{trans "Footer"}} @-->
+<!--@vars {
+"var store.getFrontendName()":"Store Name"
+"var facebook_url":"https://www.facebook.com"
+"var youtube_url":"https://www.youtube.com"
+"var instagram_url":"https://www.instagram.com"
+"var pinterest_url":"https://www.pinterest.com"
+"var twitter_url":"https://www.twitter.com"
+"var tiktok_url":"https://www.tiktok.com"
+"var google_url":"https://www.google.com"
+} @-->
+
+                                        <!-- End Content -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Exercise 5, Chapter 7 -->
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="10" align="center" color="#000" bgcolor="#fff" style="font-size: 14px; font-weight: 500; border-collapse: collapse;">
+
+                                    <tr>
+                                        <td width="30%">
+                                            {{config path="general/store_information/hours"}}
+                                        </td>
+                                        <td align="center" width="40%">
+                                            {{config path="general/store_information/name"}}
+                                        </td>
+                                        <td align="right" width="30%">
+                                            {{config path="general/store_information/postcode"}}, {{config path="general/store_information/city"}} <br />
+                                            {{config path="general/store_information/street_line1"}}<br />
+                                            {{config path="general/store_information/phone"}}<br />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- /end exercise -->
+
+                        <tr>
+                            <td style="padding: 50px 0">
+                                <table border="0" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse; width: auto;">
+                                    <tbody>
+                                    <tr>
+                                        <td align="center" style="vertical-align: bottom;">
+                                            <p style="font-size: 14px; font-weight: 500; color: #939496; margin-top: 0; margin-bottom: 0;">{{trans "Copyright&nbsp;©&nbsp;2023 %store_name. All Rights Reserved." store_name=$store.frontend_name}}</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="vertical-align: top; padding-top: 5px;">
+                                            <p style="font-size: 14px; font-weight: 500; margin-top: 0; margin-bottom: 0; color: #939496;">
+                                                <a style="color: #939496 !important;" target="_blank" href="{{store url=""}}privacy-policy-cookie-restriction-mode">{{trans 'Privacy Policy'}}</a>&nbsp;|&nbsp;
+                                                <a style="color: #939496 !important;" target="_blank" href="{{store url=""}}general-conditions">{{trans 'General conditions'}}</a>&nbsp;|&nbsp;
+                                                <a style="color: #939496 !important;" target="_blank" href="{{store url=""}}legal-warning">{{trans 'Legal Warning'}}</a>&nbsp;|&nbsp;
+                                                <a style="color: #939496 !important;" target="_blank" href="{{store url=""}}after-sales-service">{{trans 'After-Sales Service'}}</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+
+                    </tfoot>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<!-- /end exercise -->

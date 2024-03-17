@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!--
+        just a blank default XML that can be overwritten on theme settings
+    -->
+    <body />
+
+    <!-- remove CSS added by layout override in theme 1 -->
+    <head>
+        <remove src="css/packt-theme1.css"/>
+        <meta name="theme-information" content=""/>
+    </head>
+</page>

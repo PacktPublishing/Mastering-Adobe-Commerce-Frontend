@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- solution to exercise 8, Chapter 5 -->
+        <referenceBlock name="customer_form_login" template="Magento_Customer::form/new-login.phtml" />
+        <referenceBlock name="customer.new" template="Magento_Customer::form/new-info.phtml" />
+        <!-- /end solution -->
+    </body>
+</page>

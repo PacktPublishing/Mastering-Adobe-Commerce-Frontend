@@ -1,0 +1,129 @@
+/** <!-- exercise 6 solution, Chapter 6 --> */
+@teal-color: #3dbbbb;
+
+.form-create-account {
+    i {
+        &.fa-solid, &.fa-regular {
+            color: @teal-color;
+        }
+    }
+
+    fieldset {
+        margin-bottom: 0px;
+    }
+
+    input[type="checkbox"] {
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        margin: 6px;
+        padding: 0;
+        border: 2px solid @teal-color;
+        appearance: none;
+        background-color: transparent;
+        outline: none;
+        transition: outline 0.1s;
+        vertical-align:middle;
+    }
+
+    input[type="checkbox"]:checked {
+        background-size: cover;
+        padding: 2px;
+    }
+
+    input[type="checkbox"]:not(:disabled):checked {
+        border-color: var(--checkbox-checked-color);
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32" xml:space="preserve"><path style="fill: %23274c77" d="M11.941,28.877l-11.941-11.942l5.695-5.696l6.246,6.246l14.364-14.364L32,8.818"/></svg>');
+    }
+}
+
+.register-form {
+    width: 65%;
+    margin: auto;
+    border: 1px solid teal;
+    background-color: #ececec;
+    padding: 50px 20px;
+
+    .form {
+        &.account {
+            &.create {
+                min-width: inherit;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .field {
+        label {
+            margin-bottom: 10px;
+            display: inline-block;
+
+            &.extra-padding {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    div {
+        &.control {
+            &.with-icons {
+                display: grid;
+                grid-template:
+                        "a b" 40px
+                        "c c" 40px;
+                grid-template-columns: 20px 1fr;
+                align-items: center;
+                gap: 0 10px;
+                width: 100%;
+
+                i {
+                    width: 20px;
+                    grid-area: a;
+                }
+
+                input {
+                    grid-area: b;
+                };
+
+                > div {
+                    &.mage-error {
+                        grid-area: c;
+                        align-self: start;
+                        padding-left: 30px;
+                    }
+                }
+            }
+
+            input, select {
+                border: none;
+                border-bottom: 1px solid gray;
+                padding: 10px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr;
+    gap: 20px;
+    align-items: center;
+
+    button {
+        &.primary {
+            border-radius: 50px;
+            background-color: @teal-color;
+            border: none;
+            padding: 15px;
+        }
+    }
+}
+/** /end solution */

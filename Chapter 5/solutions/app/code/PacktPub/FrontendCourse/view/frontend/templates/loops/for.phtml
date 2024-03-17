@@ -1,0 +1,8 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<h3><?= __('For Loop:');?></h3>
+<hr />
+<?php for ($i = 0; $i < 10; $i++): ?>
+    <?= __('My value is %1', $i); ?> <br />
+<?php endfor; ?>

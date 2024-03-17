@@ -1,0 +1,9 @@
+<?php
+/** @var \code\PacktPub\FrontendCourse\Block\Loops $block */
+?>
+<h3><?= __('Foreach Loop:');?></h3>
+<p><?= __('Pay attention how the block action is called from the PHP class');?> </p>
+<hr />
+<?php foreach ($block->getSimpleArray() as $element): ?>
+    <?= /* @noEscape */ __('My name is %1', $element); ?> <br />
+<?php endforeach; ?>

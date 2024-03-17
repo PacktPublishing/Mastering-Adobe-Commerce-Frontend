@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-same-size" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <!-- solution to exercise 12 -->
+    <head>
+        <css src="Magento_Customer::css/custom.css" />
+    </head>
+    <!-- /end solution -->
+</page>

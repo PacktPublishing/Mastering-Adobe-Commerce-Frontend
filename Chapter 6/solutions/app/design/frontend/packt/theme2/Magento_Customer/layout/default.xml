@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- exercise 11 solution, Chapter 6 -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Create New Customer Account</title>
+        <!-- Add Font Awesome CSS -->
+        <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+              rel="stylesheet" src_type="url" type="text/css"/>
+    </head>
+    <body>
+        <referenceBlock name="register-link" template="Magento_Customer::link/register-link.phtml" />
+        <referenceBlock name="authorization-link-login" template="Magento_Customer::link/authorization-link-login.phtml" />
+    </body>
+</page>
+<!-- /end solution -->
