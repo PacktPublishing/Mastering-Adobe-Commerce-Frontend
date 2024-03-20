@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- Exercise 2 Solution, Chapter 9 -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- -->
+        <referenceBlock name="content">
+            <block name="exit.popup" template="Magento_Checkout::exit.popup.phtml" after="-"/>
+
+            <!-- Exercise 5 Solution, Chapter 9 -->
+            <block name="cart.item.delete" template="Magento_Checkout::cart.item.delete.phtml" after="-" />
+            <!-- /end solution 5-->
+        </referenceBlock>
+        <!-- -->
+    </body>
+</page>
+<!-- /end solution 2-->

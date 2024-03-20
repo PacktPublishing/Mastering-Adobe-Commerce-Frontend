@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page layout="2columns-same-size" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="div.column.left">
+            <block name="js.function" template="PacktPub_JavaScriptPlayground::js/js-function.phtml" />
+            <block name="js.object" template="PacktPub_JavaScriptPlayground::js/js-object.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="div.column.right">
+            <block name="js.widget" template="PacktPub_JavaScriptPlayground::js/js-widget.phtml" />
+            <block name="js.uicomponent" template="PacktPub_JavaScriptPlayground::js/js-uicomponent.phtml" />
+        </referenceContainer>
+
+        <referenceBlock name="packt3.demo" remove="true" />
+    </body>
+</page>

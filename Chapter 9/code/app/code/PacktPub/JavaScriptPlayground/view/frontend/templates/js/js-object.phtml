@@ -1,0 +1,20 @@
+<div>
+<h3><?= __('JS Object and It\'s mixin') ?></h3>
+    <button id="jsObject"><?= __('Click me to call a function'); ?></button>
+    <br />
+    <h3><?= __('Random number on Click:'); ?></h3>
+    <span id="jsText" data-clicked="0"></span>
+</div>
+
+<script>
+    require(['jquery', 'PacktPub_JavaScriptPlayground/js/js-object'], function($, jsObject) {
+        $(function () {
+            $('#jsObject').on('click', function(element) {
+                jsObject.setCustomValue(Math.random() * 100000);
+                $('#jsText').append(jsObject.getCustomValue() + '<br />');
+            });
+        });
+    });
+</script>
+
+

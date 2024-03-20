@@ -1,0 +1,50 @@
+/*
+	VNM Confetti Button
+	Basic styles - edit these classes as you wish
+*/
+
+.vnm-confetti-button {
+	position:								relative;
+}
+
+.vnm-confetti {
+	position:								absolute;
+	top:										50%;
+	left:										50%;
+	width:									0;
+	height:									0;
+	z-index: 								-1;	/* To ensure it appears _behind_ your button rather than on top */
+	pointer-events:						none;	/* To ensure it doesn't interfere with any other click events */
+}
+
+.vnm-confetti .confetto {
+	position:								absolute;
+	width:									0.250rem;
+	height:									0.250rem;
+}
+
+/* HERE BE DRAGONS */
+
+.vnm-confetti .confetto:not(.only-hover),
+.vnm-confetti-button:hover .vnm-confetti .confetto.only-hover {
+	display:									block;
+	-webkit-animation:					reset 1s ease-out infinite;	/* Note that this duration is overridden by the inline duration set by the plugin */
+	animation:								reset 1s ease-out infinite;
+	-webkit-animation-name:				reset, fade;
+	animation-name:						reset, fade;
+}
+
+.vnm-confetti-button .vnm-confetti .confetto.only-hover {
+	display:									none;
+}
+
+@-webkit-keyframes reset {
+	0% { transform: translate(0, 0); }
+}
+
+@keyframes reset {
+	0% { transform: translate(0, 0); }
+}
+
+@-webkit-keyframes fade { to { opacity: 0 } }
+@keyframes fade { to { opacity: 0 } }

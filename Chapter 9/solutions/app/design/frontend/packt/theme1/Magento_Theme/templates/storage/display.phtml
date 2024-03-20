@@ -1,0 +1,17 @@
+<div data-bind="scope: 'localStorageDisplay'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "localStorageDisplay": {
+                        "component": "Magento_Theme/js/localStorageDisplay",
+                        "template": "Magento_Theme/storage/display"
+                    }
+                }
+            }
+        }
+    }
+</script>
