@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solution Exercise 3, Chapter 10 -->
+<page layout="2columns-same-size" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <attribute name="class" value="knockout-js"/>
+
+        <referenceContainer name="div.column.right">
+            <block name="knockout.js.input" template="Magento_Theme::js/knockout/input.phtml" />
+        </referenceContainer>
+
+        <referenceBlock name="packt3.demo" remove="true" />
+        <referenceContainer name="content" remove="true" />
+    </body>
+</page>
+<!-- /end solution -->

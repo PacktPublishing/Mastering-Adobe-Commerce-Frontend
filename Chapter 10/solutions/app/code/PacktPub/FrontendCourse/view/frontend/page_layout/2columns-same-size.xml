@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="1column"/>
+    <referenceContainer name="main.content">
+        <container name="columns-same-size" htmlTag="div" htmlClass="grid-columns">
+            <container name="div.column.left" htmlTag="div" htmlClass="sidebar sidebar-left" />
+            <container name="div.column.right" htmlTag="div" htmlClass="sidebar sidebar-right" />
+        </container>
+    </referenceContainer>
+    <container name="after.columns" htmlTag="div" htmlClass="after-columns" />
+
+<!--    <move element="columns-same-size" destination="main" />-->
+</layout>

@@ -1,0 +1,16 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<div data-bind="scope: 'calculatorXml'">
+    <h2>Knockout Ui Component - form XML</h2>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": <?= /* @escapeNotVerified */ $block->getJsLayout() ?>
+    }
+}
+</script>

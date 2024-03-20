@@ -1,0 +1,16 @@
+<script>
+    require([
+        'jquery', 'Magento_Checkout/js/model/totals', 'domReady!', 'confetti'
+    ], function ($, totals) {
+        $(function () {
+            if (totals.totals()) {
+                const subtotal = parseFloat(totals.totals()['subtotal']);
+
+                if (subtotal > 100) {
+                    $('.checkout').confettiButton();
+                }
+            }
+
+        });
+    });
+</script>

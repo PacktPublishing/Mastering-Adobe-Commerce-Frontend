@@ -1,0 +1,25 @@
+<script src="knockout.js"></script>
+<div data-bind="with: counter">
+    <h2>Knockout Counter Example</h2>
+    <div>
+        Current Count: <strong data-bind="text: count"></strong>
+    </div>
+    <button data-bind="click: increment">Increment</button>
+    <button data-bind="click: decrement">Decrement</button>
+</div>
+<script>
+    function CounterViewModel() {
+        var self = this;
+        self.count = ko.observable(0);
+        self.increment = function() {
+            self.count(self.count() + 1);
+        };
+        self.decrement = function() {
+            self.count(self.count() - 1);
+        };
+    }
+    var mainViewModel = {
+        counter: new CounterViewModel()
+    };
+    ko.applyBindings(mainViewModel);
+</script>

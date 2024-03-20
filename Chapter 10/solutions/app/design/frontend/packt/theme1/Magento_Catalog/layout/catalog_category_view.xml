@@ -1,0 +1,9 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Solution Exercise 1, Chapter 10 -->
+        <referenceContainer name="content">
+            <block class="Magento\Catalog\Block\Category\View" name="category.products.quickview" template="Magento_Catalog::product/quickview.phtml"/>
+        </referenceContainer>
+        <!-- /end solution -->
+    </body>
+</page>

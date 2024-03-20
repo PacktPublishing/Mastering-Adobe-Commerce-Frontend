@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solution Exercise 1, Chapter 10 -->
+<page layout="2columns-same-size" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <attribute name="class" value="knockout-js"/>
+
+        <referenceContainer name="div.column.left">
+            <block name="knockout.js.calculator.xml" template="PacktPub_JavaScriptPlayground::js/knockout/calculator-xml.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="calculatorXml" xsi:type="array">
+                                <item name="component" xsi:type="string">PacktPub_JavaScriptPlayground/js/view/product-calculator</item>
+                                <item name="template" xsi:type="string">PacktPub_JavaScriptPlayground/view/product-calculator</item>
+                                <item name="children" xsi:type="array">
+                                    <item name="test1" xsi:type="array">
+                                        <item name="component" xsi:type="string">PacktPub_JavaScriptPlayground/js/view/product-info</item>
+                                        <item name="template" xsi:type="string">PacktPub_JavaScriptPlayground/view/product-info</item>
+                                        <item name="displayArea" xsi:type="string">region1</item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="packt3.demo" remove="true" />
+        <referenceContainer name="content" remove="true" />
+
+    </body>
+</page>
+<!-- /end solution -->

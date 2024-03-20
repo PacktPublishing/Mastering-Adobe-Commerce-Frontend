@@ -1,0 +1,47 @@
+<!-- Solution Exercise 4, Chapter 10 -->
+<?php
+/** @var \Magento\Catalog\Block\Category\View $block */
+?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/modal/modal": {
+                "type": "popup",
+                "responsive": true,
+                "innerScroll": true,
+                "title": "Quick View",
+                "buttons": []
+            }
+        }
+    }
+</script>
+<div id="quickview-content" style="display:none;">
+    <div class="product-name"></div>
+    <div class="product-price"></div>
+</div>
+
+<script type="text/javascript">
+    require(['jquery', 'Magento_Ui/js/modal/modal'], function($, modal) {
+        let options = {
+            type: 'popup',
+            modalClass: 'quickview-modal',
+            responsive: true,
+            innerScroll: true,
+            title: 'Quick View',
+            buttons: []
+        };
+
+        let popup = modal(options, $('#quickview-content'));
+
+        $('.product-item').each(function() {
+            var productName = $(this).find('.product-item-name').text();
+            var productPrice = $(this).find('.price-container .price').text();
+            $(this).find('.action.toquickview').on('click', function() {
+                $('#quickview-content .product-name').text(productName);
+                $('#quickview-content .product-price').text(productPrice);
+                popup.openModal();
+            });
+        });
+    });
+</script>
+<!-- /end solution -->

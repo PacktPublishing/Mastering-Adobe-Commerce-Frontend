@@ -1,0 +1,40 @@
+<table>
+    <tbody>
+<!-- ko foreach: getProducts() -->
+    <tr>
+        <td>
+            <p>
+                W: <span data-bind="text: width"></span>
+                H: <span data-bind="text: height"></span>
+                L: <span data-bind="text: length"></span>
+            </p>
+        </td>
+        <td><button data-bind="click: $parent.removeProduct.bind($data, sku)">X</button>
+        </td>
+    </tr>
+<!-- /ko -->
+    </tbody>
+</table>
+<div>
+    <!-- ko foreach: getRegion('region1') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+
+    <!-- ko foreach: getRegion('region2') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>
+<button data-bind="click: addProduct">Add Item</button>
+<table>
+    <tr>
+        <td>
+            <h3>Product Count:</h3>
+            <span><span data-bind="text: productCount" ></span> product count</span>
+        </td>
+        <td>
+            <h3>Total Volume:</h3>
+            <span data-bind="text: volumetricVolume" > cubic meter</span>
+        </td>
+    </tr>
+</table>
+

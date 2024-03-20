@@ -1,0 +1,30 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<div data-bind="scope: 'calculatorPhtml'">
+    <h2>Knockout Ui Component - form PHTML</h2>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "calculatorPhtml": {
+                        "component": "PacktPub_JavaScriptPlayground/js/view/product-calculator",
+                        "template":  "PacktPub_JavaScriptPlayground/view/product-calculator",
+                        "children": {
+                            "productChild2": {
+                                "component": "PacktPub_JavaScriptPlayground/js/view/product-info",
+                                "template":  "PacktPub_JavaScriptPlayground/view/product-info2",
+                                "displayArea": "region2"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>

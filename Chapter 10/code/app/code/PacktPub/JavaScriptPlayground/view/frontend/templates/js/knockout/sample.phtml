@@ -1,0 +1,62 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<div data-bind="scope: 'counter'">
+    <h2>Knockout Counter Example - function</h2>
+
+    <div>
+        Current Count: <strong data-bind="text: count"></strong>
+    </div>
+
+    <button data-bind="click: increment">Increment</button>
+    <button data-bind="click: decrement">Decrement</button>
+</div>
+
+<hr />
+
+
+<div data-bind="scope: 'counter-v2'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <h2>Knockout Param Example - UiComponent Extend</h2>
+
+    <div>
+        Current Count: <strong data-bind="text: count"></strong>
+    </div>
+
+    <button data-bind="click: increment">Increment</button>
+    <button data-bind="click: decrement">Decrement</button>
+
+</div>
+
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "counter": {
+                        "component": "PacktPub_JavaScriptPlayground/js/model/counter",
+                        "someValue": "random Value"
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "counter-v2": {
+                        "component": "PacktPub_JavaScriptPlayground/js/model/counterv2",
+                        "template": "PacktPub_JavaScriptPlayground/view/counter"
+                    }
+                }
+            }
+        }
+    }
+</script>

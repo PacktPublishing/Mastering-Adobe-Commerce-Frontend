@@ -1,0 +1,29 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<!-- calling JS function -->
+<div data-mage-init='{
+    "Magento_Theme/js/product-labels-function": {
+       "labelShowPriceBelow": 40
+    }
+}'></div>
+
+
+<!-- calling ui component -->
+<div data-mage-init='{
+    "productLabels": {
+       "labelShowPriceBelow": 30
+    }
+}'></div>
+
+
+<!-- this is how we call a widget -->
+<script type="text/x-magento-init">
+    {
+        ".price-container.price-final_price": {
+            "productLabelsWidget": {
+                "labelShowPriceBelow": 40
+            }
+        }
+    }
+</script>

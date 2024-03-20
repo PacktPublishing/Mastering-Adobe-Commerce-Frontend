@@ -1,0 +1,23 @@
+<!-- Solution Exercise 3, Chapter 10 -->
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div data-bind="scope: 'reverseText'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "reverseText": {
+                        "component": "Magento_Theme/js/reverse-text",
+                        "template": "Magento_Theme/reverse-text"
+                    }
+                }
+            }
+        }
+    }
+</script>
+<!-- /end solution -->
