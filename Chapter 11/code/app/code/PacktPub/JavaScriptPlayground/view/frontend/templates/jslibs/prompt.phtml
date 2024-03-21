@@ -1,0 +1,48 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<h3><?= __('Tabs widget with declarative notation'); ?></h3>
+<button id="prompt"><?= __('Prompt'); ?></button>
+
+
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/prompt'
+    ], function ($, prompt) {
+        'use strict';
+
+        $('#prompt').on('click', function() {
+            prompt({
+                title: $.mage.__('What is your name?'),
+                content: '<h4>Content of the prompt window</h4>',
+                modalClass: 'prompt',
+                value: $.mage.__('Jakub'),
+                validation: true,
+                promptField: '[data-role="promptField"]',
+                validationRules: ['required-entry'],
+                attributesForm: {
+                    novalidate: 'novalidate',
+                    action: ''
+                },
+                attributesField: {
+                    name: 'name',
+                    'data-validate': '{required:true}',
+                    maxlength: '30'
+                },
+                actions: {
+                    always: function () {
+                        console.log('')
+                    },
+                    confirm: function () {
+                        console.log('success!');
+                    },
+                    cancel: function () {
+                        console.log('cancel!');
+                    }
+                }
+            });
+        });
+    });
+</script>

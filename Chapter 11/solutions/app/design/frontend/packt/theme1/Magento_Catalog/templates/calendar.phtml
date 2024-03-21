@@ -1,0 +1,20 @@
+<!-- Exercise 1, Chapter 11 Solution -->
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div class="calendar">
+    <input type="text" id="product-calendar" name="product_calendar" value=""></input>
+    <script>
+        require([
+            'jquery',
+            'mage/calendar'
+        ], function ($) {
+            $('#product-calendar').calendar({
+                showsTime: true,
+                buttonText: 'Select Date',
+                dateFormat: 'mm/dd/yy'
+            });
+        });
+    </script>
+</div>
+<!-- /end solution -->

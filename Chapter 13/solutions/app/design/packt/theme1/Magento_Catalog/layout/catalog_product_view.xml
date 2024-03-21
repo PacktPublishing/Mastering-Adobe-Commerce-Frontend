@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Exercise 1 Solution, Chapter 13 -->
+        <referenceContainer name="product.info.details">
+            <block class="Magento\Cms\Block\Block" name="cms.block.one">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">cms_block_one</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Cms\Block\Block" name="cms.block.two">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">cms_block_two</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <!-- /end solution -->
+
+
+        <!-- Exercise 5, Chapter 13 Solution -->
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Product\View" name="custom.tab" as="custom_tab"
+                   template="Magento_Catalog::youtube.phtml" group="detailed_info">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Media Upload</argument>
+                    <argument name="sort_order" xsi:type="string">999</argument>
+                </arguments>
+
+                <block class="Magento\Cms\Block\Block" name="cms.block.youtube">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">cms_block_youtube</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
+        <!-- /end solution -->
+    </body>
+</page>
+

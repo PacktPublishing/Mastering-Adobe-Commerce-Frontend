@@ -1,0 +1,32 @@
+<!-- Exercise 2, Chapter 11 Solution -->
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div id="uploader" class="uploader"
+     data-mage-init='{
+        "mediaUploader" : {
+            "maxFileSize": 1,
+            "maxWidth": 1920,
+            "maxHeight": 1200,
+            "isResizeEnabled": true,
+            "disabled": false
+        }
+    }'
+>
+    <div class="fileinput-button form-buttons button">
+        <span>Browse Files...</span>
+        <input id="fileupload" type="file" name="image"
+               data-url="AJAX_URL" multiple="multiple" />
+    </div>
+    <div class="clear"></div>
+    <script id="uploader-template" type="text/x-magento-template" data-template="uploader">
+        <div id="<%- data.id %>" class="file-row">
+            <span class="file-info"><%- data.name %> (<%- data.size %>)</span>
+            <div class="progressbar-container">
+                <div class="progressbar upload-progress" style="width: 0%;"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </script>
+</div>
+<!-- /end solution -->

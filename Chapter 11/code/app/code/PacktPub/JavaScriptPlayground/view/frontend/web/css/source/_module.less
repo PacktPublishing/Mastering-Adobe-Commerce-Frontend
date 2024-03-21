@@ -1,0 +1,44 @@
+/** */
+ul {
+    &.header {
+        &.links {
+            li {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+
+.authorization-link {
+    &--jslibs-js {
+        color: #fff;
+        background-color: indianred;
+        padding: 5px;
+        border-radius: 999px;
+    }
+}
+
+.accordionDemo {
+    .collapsible {
+        cursor: pointer;
+        padding: 5px;
+        border: 1px solid gray;
+        font-size: 1.2em;
+    }
+
+    &:not(:first-child) {
+        border-top: none;
+    }
+
+    .content {
+        padding: 15px;
+        border-left: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+
+        &:first-child {
+            border-bottom: none;
+        }
+    }
+}

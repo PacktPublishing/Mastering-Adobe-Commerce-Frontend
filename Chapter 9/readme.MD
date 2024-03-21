@@ -15,9 +15,8 @@ Enable modules: `PacktPub_FrontendCourse`, `PacktPub_JavaScriptPlayground` with 
 1. Copy `app/code/PacktPub` to your project's corresponding directory (`app/code`).
 2. Enter your `warden` container: `warden shell`.
 3. Enable modules, if you haven't already,: `php bin/magento mod:enable PacktPub_FrontendCourse PacktPub_JavaScriptPlayground`.
-4. Make sure you installed `email tester module` from Yireo: \
-5. Run upgrade command `php bin/magento setup:upgrade`
-6. Clear the cache: `php bin/magento cache:flush`.
+4. Run upgrade command `php bin/magento setup:upgrade`
+5. Clear the cache: `php bin/magento cache:flush`.
 ---
 
 ### Verification

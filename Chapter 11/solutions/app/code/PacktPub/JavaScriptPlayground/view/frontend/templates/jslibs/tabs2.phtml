@@ -1,0 +1,20 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<h3><?= __('Tabs widget by data-mage-init with settings'); ?></h3>
+<div class="product data items"
+     data-mage-init='{"mage/tabs": {
+        "openedState": "active", "animate": {"duration": 500}, "active": 0, "disabled": [2], "disabledState": "disabled"}
+     }'>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cars">Delivery Information</a>
+    </div>
+    <div id="tab-cars" class="item content" data-role="content">this is just a block with some random delivery information</div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-movies">Payment Information</a>
+    </div>
+    <div id="tab-movies" class="item content" data-role="content">This is a block with some payment information</div>
+</div>

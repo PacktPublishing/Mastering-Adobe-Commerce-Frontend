@@ -1,0 +1,26 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<h3><?= __('Accordion by data-mage-init with settings'); ?></h3>
+<div id="accordion" class="accordionDemo" data-mage-init='{
+    "accordion":{
+        "active": [0, 1],
+        "collapsible": true,
+        "openedState": "active",
+        "multipleCollapsible": true
+    }}'>
+    <div data-role="collapsible" class="collapsible">
+        <div data-role="trigger">
+            <h4><?= __('Accordion 2.1');?></h4>
+        </div>
+    </div>
+    <div data-role="content" class="content">Accordion 2.1 Content</div>
+
+    <div data-role="collapsible" class="collapsible">
+        <div data-role="trigger">
+            <h4><?= __('Accordion 2.2');?></h4>
+        </div>
+    </div>
+    <div data-role="content" class="content">Accordion 2.2 Content</div>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Exercise 1, Chapter 11 Solution -->
+        <referenceBlock name="product.info.addto">\
+            <block name="product.calendar" template="Magento_Catalog::calendar.phtml" before="-"/>
+        </referenceBlock>
+        <!-- /end solution -->
+
+
+        <!-- Exercise 2, Chapter 11 Solution -->
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Product\View" name="custom.tab" as="custom_tab"
+                   template="Magento_Catalog::uploader.phtml" group="detailed_info">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Media Upload</argument>
+                    <argument name="sort_order" xsi:type="string">999</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <!-- /end solution -->
+    </body>
+</page>

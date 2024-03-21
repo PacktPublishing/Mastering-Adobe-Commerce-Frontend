@@ -1,0 +1,30 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Laminas\Escaper\Escaper $escaper */
+?>
+<h3><?= __('Accordion widget with declarative notation'); ?></h3>
+<div id="accordionDemo" class="accordionDemo">
+    <div data-role="collapsible" class="collapsible">
+        <div data-role="trigger">
+            <h4><?= __('Accordion 1.1');?></h4>
+        </div>
+    </div>
+    <div data-role="content" class="content">Accordion 1.1 Content</div>
+
+    <div data-role="collapsible" class="collapsible">
+        <div data-role="trigger">
+            <h4><?= __('Accordion 1.2');?></h4>
+        </div>
+    </div>
+    <div data-role="content" class="content"> Accordion 1.2 Content</div>
+</div>
+
+<script>
+    require([
+            'jquery',
+            'accordion'
+        ], function ($) {
+            $("#accordionDemo").accordion();
+        }
+    );
+</script>

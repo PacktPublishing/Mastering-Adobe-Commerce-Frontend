@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page layout="2columns-same-size" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="div.column.left">
+            <block name="accordion.demo" template="PacktPub_JavaScriptPlayground::jslibs/accordion.phtml" />
+            <block name="tabs.demo" template="PacktPub_JavaScriptPlayground::jslibs/tabs.phtml" />
+            <block name="prompt.demo" template="PacktPub_JavaScriptPlayground::jslibs/prompt.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="div.column.right">
+            <block name="accordion2.demo" template="PacktPub_JavaScriptPlayground::jslibs/accordion2.phtml" />
+            <block name="tabs2.demo" template="PacktPub_JavaScriptPlayground::jslibs/tabs2.phtml" />
+        </referenceContainer>
+    </body>
+</page>
