@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- exercise 7 solution, Chapter 6 -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Create New Customer Account</title>
+        <!-- Add Font Awesome CSS -->
+        <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+              rel="stylesheet" src_type="url" type="text/css"/>
+    </head>
+    <body>
+
+        <referenceBlock name="customer_form_register" template="Magento_Customer::form/custom-register.phtml">
+            <arguments>
+                <argument name="attribute_data" xsi:type="object">Magento\Customer\Block\DataProviders\AddressAttributeData</argument>
+                <argument name="region_provider" xsi:type="object">Magento\Customer\ViewModel\Address\RegionProvider</argument>
+                <argument name="create_account_button_view_model" xsi:type="object">Magento\Customer\ViewModel\CreateAccountButton</argument>
+            </arguments>
+            <container name="form.additional.info" as="form_additional_info"/>
+            <container name="customer.form.register.fields.before" as="form_fields_before" label="Form Fields Before" htmlTag="div" htmlClass="customer-form-before"/>
+        </referenceBlock>
+
+        <referenceBlock name="fieldset.create.info.additional" remove="true" />
+
+    </body>
+</page>
+<!-- /end solution -->
