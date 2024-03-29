@@ -13,36 +13,22 @@ The repository is organized into folders corresponding to the chapters in the bo
 
 ### Chapters Overview
 
-1. **Setting Up the Local Environment**
-    - Explore how to configure your local development environment for Adobe Commerce development.
-2. **Installing the Magento/Adobe Commerce Application**
-    - Learn the steps to install Adobe Commerce and prepare it for theming and customization.
-3. **Introduction to Adobe Commerce Theming**
-    - Get acquainted with the basics of Adobe Commerce theming and the structure of themes.
-4. **The Layout System**
-    - Dive deep into the Adobe Commerce layout system and learn how to manipulate layout XML files.
-5. **Working with Templates**
-    - Understand how to work with PHTML templates to render dynamic content.
-6. **Styling an Adobe Commerce Theme**
-    - Master the techniques for styling your Adobe Commerce theme using LESS and CSS.
-7. **Customizing Emails**
-    - Learn how to customize email templates to maintain brand consistency across communications.
-8. **Introduction to JavaScript Libraries and Frameworks**
-    - Get introduced to various JavaScript libraries and frameworks bundled with Adobe Commerce.
-9. **RequireJS and jQuery**
-    - Explore how to manage JavaScript resources with RequireJS and utilize jQuery in your themes.
-10. **Knockout.js and UI Components**
-    - Discover how to leverage Knockout.js and UI components for dynamic, client-side interfaces.
-11. **Commonly Used Libraries Bundled with Adobe Commerce**
-    - Familiarize yourself with the commonly used JavaScript libraries and how they enhance the frontend.
-12. **Storefront-Related Configuration in the Admin Panel**
-    - Learn about configuring storefront options via the Adobe Commerce Admin Panel to influence the frontend.
-13. **Working with Magento CMS**
-    - Understand how to utilize the Magento CMS for content management and customization.
-14. **Frontend Optimization Techniques**
-    - Master techniques to optimize the frontend for better performance and user experience.
-15. **Common Tools that Help with Local Development**
-    - Explore tools that facilitate efficient local development of Adobe Commerce projects.
+1. Setting Up the Local Environment
+2. Installing the Magento/Adobe Commerce Application
+3. Introduction to Adobe Commerce Theming
+4. The Layout System
+5. Working with Templates
+6. Styling an Adobe Commerce Theme
+7. Customizing Emails
+8. Introduction to JavaScript Libraries and Frameworks
+9. RequireJS and jQuery
+10. Knockout.js and UI Components
+11. Commonly Used Libraries Bundled with Adobe Commerce
+12. Storefront-Related Configuration in the Admin Panel
+13. Working with Magento CMS
+14. Frontend Optimization Techniques
+15. Common Tools that Help with Local Development
+
 
 ## How to Use This Repository
 
