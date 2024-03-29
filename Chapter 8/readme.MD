@@ -1,5 +1,6 @@
 # Chapter 8: Introduction to JavaScript Libraries and Frameworks in Adobe Commerce
-
+Introduction to JavaScript Libraries and Frameworks
+---
 ## Key Points
 
 - **Complexity of JavaScript**: The integration of JavaScript within the Adobe Commerce (AC) platform is complex, often causing debates among frontend and backend developers about responsibilities.

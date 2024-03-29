@@ -1,5 +1,6 @@
 # Adobe Commerce Frontend Development - Chapter 12
-
+Storefront-Related Configuration in the Admin Panel
+---
 This folder contains all scripts, code, and solutions for the practical exercises described in Chapter 12 of our Frontend Development Book.
 
 ## Folder Structure
@@ -64,4 +65,17 @@ define([
 where `XX` is the number of the exercise
 
 ### Important:
-Please check and pay attention how changes are related to module related directories.
+* Please check and pay attention how changes are related to module related directories.
+* Disable Client Side CSS Compilation, use server side
+
+---
+### Practical Exercises:
+1. Remove product swatches on a category page that does not display filters by using layout XML.
+2. Change the configurable product page to use two a column-left page layout, using a proper
+   layout handle.
+3. Move the category description to the bottom after the product listing.
+4. Change the page title prefix and suffix.
+5. Add Google Tag Manager to your theme.
+6. Change the logo in transactional emails.
+7. For all anchor categories, add a custom CSS file only for that category page using layout XML.
+   Make the background silver for that category.

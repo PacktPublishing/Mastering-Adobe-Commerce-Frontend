@@ -1,5 +1,6 @@
 # Adobe Commerce Frontend Development - Chapter 2
-
+Installing the Magento/Adobe Commerce Application
+---
 This folder contains all scripts, code and solutions to practical exercises that mentoined in the chapter 2 of our Frontend Development Book.
 
 ---
@@ -11,3 +12,12 @@ The structure of the folder is following:
 ## Important information:
 For Linux / WSL distro / OSX you need to make sure that all files are synced with your `warden` environment
 
+---
+### Practical Exercises:
+1. Create a new project called packt2 from scratch and install Adobe Commerce/Magento
+   Open Source with sample data.
+2. Move one of your existing Adobe Commerce/Magento Open Source projects to Warden.
+   Note that this might require at least three key elements:
+   * Repository access.
+   * Media files package.
+   * Latest database dump.

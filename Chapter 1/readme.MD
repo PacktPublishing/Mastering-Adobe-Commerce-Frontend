@@ -1,5 +1,5 @@
 # Adobe Commerce Frontend Development - Chapter 1
-
+Setting Up the Local Environment
 ---
 This folder does not contain any code examples from the book, or solutions to practical exercises as there are none in the Chapter 1.
 

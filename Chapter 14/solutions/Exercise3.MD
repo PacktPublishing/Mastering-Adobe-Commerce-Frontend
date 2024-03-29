@@ -22,7 +22,7 @@
 
 4. Enable Magpack bundling:
 ```bash
-    bin/magento config:set dev/js/enable_magepack_js_bundling
+    bin/magento config:set dev/js/enable_magepack_js_bundling 1
 ```
 
 5. Install Magepack for node.js

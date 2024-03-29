@@ -1,5 +1,6 @@
 # Adobe Commerce Frontend Development - Chapter 10
-
+Knockout.js and UI Components
+---
 This folder contains all scripts, code, and solutions for the practical exercises described in Chapter 10 of our Frontend Development Book.
 
 ## Folder Structure
@@ -65,4 +66,19 @@ define([
 where `XX` is the number of the exercise
 
 ### Important:
-Please check and pay attention how changes are related to module related directories.
+* Please check and pay attention how changes are related to module related directories.
+* Disable Client Side CSS Compilation, use server side
+
+---
+### Practical Exercises:
+1. Add local storage to retrieve and store the products added and removed in our product calculator
+example from this chapter.
+2. Overwrite a template used for shipping method rendering in the checkout process in your local
+   theme. Do it via the checkout page configuration handle.
+3. Completing the following basic Knockout.js practice tasks:
+   * On any given page, add a template with an input field.
+   * Bind the text to the Knockout.js observable.
+   * As the user enters data into the input field, show the reverse of that text below the field.
+4. **Dynamic UI component**, quick view: On a product listing page, add a button titled Quick View
+   that will open a popup/modal window that will display the product name and the product price
+   loaded from the selected product grid item.

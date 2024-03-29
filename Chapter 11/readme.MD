@@ -1,5 +1,6 @@
 # Adobe Commerce Frontend Development - Chapter 11
-
+Commonly Used Libraries Bundled with Adobe Commerce
+---
 This folder contains all scripts, code, and solutions for the practical exercises described in Chapter 11 of our Frontend Development Book.
 
 ## Folder Structure
@@ -65,4 +66,16 @@ define([
 where `XX` is the number of the exercise
 
 ### Important:
-Please check and pay attention how changes are related to module related directories.
+* Please check and pay attention how changes are related to module related directories.
+* Disable Client Side CSS Compilation, use server side
+
+---
+### Practical Exercises
+1. Add a new block on a product page that will show a calendar widget and allow the user to
+select a date.
+2. Add a new tab on a product page and a MediaUploader widget inside the tab.
+3. Modify the breadcrumb widget to show a home icon instead of the Home link. Do this by
+   modifying the breadcrumbs.js widget: \
+    ![img.png](img.png)
+4. On the checkout page, change the behavior of the summary block and make sure it implements
+   the Sticky widget so it stays with the user when they scroll on the checkout page.
