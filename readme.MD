@@ -1,6 +1,7 @@
 # Mastering Adobe Commerce Frontend
 
 Welcome to the official repository for "Mastering Adobe Commerce Frontend". This repository serves as a comprehensive resource, containing code examples and solutions to practical exercises aligned with the content of each chapter in the book. The book is designed to guide you through setting up your local environment, understanding the intricacies of Adobe Commerce theming, and mastering frontend optimization techniques, among other essential topics.
+\
 ![img.png](img.png)
 
 ## Repository Structure
